@@ -77,13 +77,13 @@ while True:
     if check_user==1:
         decision2=int(input("Do you have student number?(No(1)/Yes(2)):"))
         if decision2==1:
-            print("sign in")
+            print("Please sign in")
             name1=input("Please enter your name:")
             surname1=input("Please enter your surname:")
             num1=int(input("please enter your student number:"))
             cm.insert_Student(name1,surname1,num1)
         if decision2==2:
-            print("Log in")
+            print("Please Log in")
             print("\n")
             num3=int(input("Please enter your student number:"))
             cm.check_student(num3)
