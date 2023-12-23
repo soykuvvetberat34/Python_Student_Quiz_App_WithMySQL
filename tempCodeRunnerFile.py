@@ -1,2 +1,0 @@
-                else:
-                    print("\nHatali işlem")
