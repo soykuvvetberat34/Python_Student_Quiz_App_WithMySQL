@@ -73,7 +73,14 @@ Let's see the all questions
 
 --------------------------------------------------------------------------------------------------
 
-Let's login as a STUDENT
+Let's sign as a STUDENT
+
+![image](https://github.com/soykuvvetberat34/Python_Student_Quiz_App_WithMySQL/assets/69586522/7ad70122-c550-493b-8f44-253a81b7d67f)
+
+
+Login as a STUDENT
+
+
 
 
 
