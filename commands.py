@@ -142,7 +142,7 @@ def check_student(num3):
                         else:
                             values6=last_point
                         mycursor.execute(sql6,values6)
-                        print(f"puaniniz:{values6}")
+                        print(f"Your score:{values6}")
 
                             
 
