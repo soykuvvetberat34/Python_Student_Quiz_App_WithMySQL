@@ -7,9 +7,20 @@ this is the authotrized users
 
 ![image](https://github.com/soykuvvetberat34/Python_Student_Quiz_App_WithMySQL/assets/69586522/db737619-3651-474e-951c-1f0cbbe3c973)
 
+Log in as a teacher:
+
 ![image](https://github.com/soykuvvetberat34/Python_Student_Quiz_App_WithMySQL/assets/69586522/83e9910d-84ba-4573-b62e-231a8455453c)
 
+----------------------------------------------------------------------------------------------------
+
+Let's add a question:
+
+
 ![image](https://github.com/soykuvvetberat34/Python_Student_Quiz_App_WithMySQL/assets/69586522/903d0c44-347e-4dba-b5e3-047ee575da4d)
+
+
+-----------------------------------------------------------------------------------------------------
+
 
 Let's delete some question as a teacher
 
