@@ -17,4 +17,19 @@ Let's delete some question as a teacher
 
 ![image](https://github.com/soykuvvetberat34/Python_Student_Quiz_App_WithMySQL/assets/69586522/d2de40e0-c681-48c4-a072-1d62e7e75c2b)
 
+result:
+![image](https://github.com/soykuvvetberat34/Python_Student_Quiz_App_WithMySQL/assets/69586522/e7b2ed60-9318-4d9f-81be-ae0fb7ac0cad)
+
+---------------------------------------------------------------------------------------------------
+
+Let's update the question
+Question:
+![image](https://github.com/soykuvvetberat34/Python_Student_Quiz_App_WithMySQL/assets/69586522/96442d17-7576-4a3a-9ad9-c0fa378cfadb)
+
+Process:
+![image](https://github.com/soykuvvetberat34/Python_Student_Quiz_App_WithMySQL/assets/69586522/e1048033-d827-4804-9e56-6d1aff761492)
+
+result:
+![image](https://github.com/soykuvvetberat34/Python_Student_Quiz_App_WithMySQL/assets/69586522/c03899f5-27f4-4402-8b32-d72528a002df)
+
 
