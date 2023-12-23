@@ -15,14 +15,12 @@ def insert_Question(Question,Answer):
     
     try:
         mydb.commit()
-        print(f"işlem başarili soru:{Question} ve cevap:{Answer} eklendi!")
+        print(f"Process went with succes Question:{Question} and answer:{Answer} added!")
     except pymysql.connect.Error as err:
-        print("HATA KODU:",err)
+        print("ERROR CODE:",err)
     except pymysql.err.InterfaceError as err2:
-        print("Hata:",err2)
-    finally:
-        
-        print("Veritabani kapatildi")
+        print("ERROR:",err2)
+    
         
 def check_authorized_user(check_teacher_password):
     kontrol=0
@@ -32,21 +30,18 @@ def check_authorized_user(check_teacher_password):
     for i in result:
         for k in i:
             if k==check_teacher_password:
-                print("\nGiriş başarili Hoşgeldiniz!")
-                print("Yönetici olarak giriş yaptiniz.\n")
+                print("\nLogin process went with succes!")
+                print("You are logged in as teacher!\n")
                 kontrol=1
             else:
                 print("\n")
     
-    print("HATALİ İŞLEM")
     if(kontrol==1):
         return 1
     try:
         mydb.commit()
     except:
-        print("Hatali işlem")
-    finally:
-        print("işlem bitirildi.")
+        print("process went wrong")
         
 
 def delete_Question(questionid):
@@ -54,28 +49,23 @@ def delete_Question(questionid):
     value2=questionid
     mycursor.execute(sql2,value2)
     try:
-        print("soru silindi")
+        print("Question is deleted")
         mydb.commit()
     except:
         print("\n")
-    finally:
-        
-        print("Veritabani kapatildi")
+
 
 def see_Questions():
     mycursor.execute("SELECT * FROM questions")
     result2=mycursor.fetchall()
     
     for y in result2:
-        print(f"soru id:{y[0]} soru:{y[1]} doğru cevap:{y[2]}")
+        print(f"Question id:{y[0]} Question:{y[1]} True answer:{y[2]}")
     try:
-        print("işlem başarili")
+        print("Process successed")
         mydb.commit()
     except:
-        print("HATALİ İŞLEM")
-    finally:
-        
-        print("Veritabani kapatildi")
+        print("Process went wrong")
 
 def Update_Questions(q_dec,q_id,new_q):
     if q_dec==1:
@@ -83,40 +73,34 @@ def Update_Questions(q_dec,q_id,new_q):
         values3=(new_q,q_id)
         mycursor.execute(sql3,values3)
         try:
-            print("işlem başarili")
+            print("Process successed")
             mydb.commit()
         except:
-            print("HATALİ İŞLEM")
-        finally:
-            print("Veritabani kapatildi")
+            print("Process went wrong")
             
     if q_dec==2:
         sql4="UPDATE questions SET answer=%s WHERE idquestions=%s"
         values4=(new_q,q_id)
         mycursor.execute(sql4,values4)  
         try:
-            print("işlem başarili")
+            print("Process successed")
             mydb.commit()
         except:
-            print("HATALİ İŞLEM")
-        finally:
-            print("Veritabani kapatildi")
+            print("Process went wrong")
+
               
     else:
-        print("Bir hata oluştu") 
+        print("Something went wrong") 
         
 def insert_Student(name1,surname1,num1):
     sql5="INSERT INTO students(studentsnumber,studentsName,studentsSurname,studentsPoint) VALUE(%s,%s,%s,%s)"
     values5=(num1,name1,surname1,0)
     mycursor.execute(sql5,values5)
     try:
-        print(f" {num1} numarali öğrenci {name1} {surname1} eklendi")
+        print(f" {num1}-{name1} {surname1} student added")
         mydb.commit()
     except:
-        print("Süreçte hata oluştu")
-    finally:
-        
-        print("Veritabani kapatildi")
+        print("Something went wrong")
     
 def check_student(num3):
     mycursor.execute("SELECT studentsnumber FROM students")
@@ -126,12 +110,12 @@ def check_student(num3):
             if g==num3:
                 print("\n")
                 while True:
-                    print("------------HOŞGELDİN------------")
-                    print("Yapacağiniz işlemi seçin")
+                    print("------------Welcome-----------")
+                    print("Which action do you want to take?")
                     print("1)Sorulari çöz")
                     print("2)Puanini gör")
                     print("Çikiş yap (-1)")
-                    decision4=int(input("Karariniz nedir?(1/2/-1):"))
+                    decision4=int(input("What's your choice?(1/2/-1):"))
                     if decision4==1:
                         choices=[]
                         point=0
@@ -139,8 +123,8 @@ def check_student(num3):
                         result5=mycursor.fetchall()
                         for d in result5:
                             for f in d:
-                                print(f"Soru:{f}")
-                                answ=input("Cevabin nedir:")
+                                print(f"Question:{f}")
+                                answ=input("What's your answer?:")
                                 choices.append(answ)
                         mycursor.execute("SELECT answer FROM questions")
                         result6=mycursor.fetchall()
@@ -170,18 +154,18 @@ def check_student(num3):
                         result7=mycursor.fetchall()
                         for j in result7:
                             for s in j:
-                                print(f"PUANIN:{s}")
+                                print(f"Your score:{s}")
                     if decision4==-1:
                         break
                     
             else:
-                print("HATALİ GİRİŞ")
+                print("Log in failed")
     
     try:
         mydb.commit()
         
     except:
-        print("HATALİ İŞLEM") 
+        print("Something went wrong") 
     
         
 def see_students_score(stnum):
@@ -191,12 +175,12 @@ def see_students_score(stnum):
     result8=mycursor.fetchall()
     for x in result8:
         for c in x:
-            print(f"{stnum} numarali öğrencinin puani:{c}")    
+            print(f"Student with this id:{stnum}, student's score:{c}")    
     try:
         mydb.commit()
-        print("işlem başari ile bitirildi")
+        print("Process went succes")
     except:
-        print("Hatali işlem")
+        print("Something wnet wrong")
         
    
     
