@@ -7,7 +7,7 @@ this is the authotrized users
 
 ![image](https://github.com/soykuvvetberat34/Python_Student_Quiz_App_WithMySQL/assets/69586522/db737619-3651-474e-951c-1f0cbbe3c973)
 
-Log in as a teacher:
+Log in as a TEACHER:
 
 ![image](https://github.com/soykuvvetberat34/Python_Student_Quiz_App_WithMySQL/assets/69586522/83e9910d-84ba-4573-b62e-231a8455453c)
 
@@ -49,5 +49,40 @@ Process:
 result:
 
 ![image](https://github.com/soykuvvetberat34/Python_Student_Quiz_App_WithMySQL/assets/69586522/c03899f5-27f4-4402-8b32-d72528a002df)
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+Let's see the student's score
+
+Process:
+
+![image](https://github.com/soykuvvetberat34/Python_Student_Quiz_App_WithMySQL/assets/69586522/b4fbecac-c1a7-4bda-a8bd-91ff272de33f)
+
+
+![image](https://github.com/soykuvvetberat34/Python_Student_Quiz_App_WithMySQL/assets/69586522/7a59eb98-c6c1-4853-99f7-a364399ff0e1)
+
+
+---------------------------------------------------------------------------------------------------
+
+Let's see the all questions
+
+![image](https://github.com/soykuvvetberat34/Python_Student_Quiz_App_WithMySQL/assets/69586522/e3fefd0c-2b1b-4464-843d-34d05e405453)
+
+
+--------------------------------------------------------------------------------------------------
+
+Let's login as a STUDENT
+
+
+
+
+
+
+
+
+
+
 
 
