@@ -91,8 +91,6 @@ while True:
     if check_user==-1:
         print("exited!")
         break
-    else:
-        print("error, try again!")
 mydb.close
         
         
