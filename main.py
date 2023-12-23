@@ -69,8 +69,6 @@ while True:
                 if decision==-1:
                     print("system shut down!")
                     break
-                else:
-                    print("\nThe process went wrong")
 
 
             
