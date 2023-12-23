@@ -112,9 +112,9 @@ def check_student(num3):
                 while True:
                     print("------------Welcome-----------")
                     print("Which action do you want to take?")
-                    print("1)Sorulari çöz")
-                    print("2)Puanini gör")
-                    print("Çikiş yap (-1)")
+                    print("1)Solve the questions")
+                    print("2)See your score")
+                    print("exit(-1)")
                     decision4=int(input("What's your choice?(1/2/-1):"))
                     if decision4==1:
                         choices=[]
@@ -158,8 +158,6 @@ def check_student(num3):
                     if decision4==-1:
                         break
                     
-            else:
-                print("Log in failed")
     
     try:
         mydb.commit()
