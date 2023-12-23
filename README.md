@@ -83,7 +83,23 @@ Login as a STUDENT
 ![image](https://github.com/soykuvvetberat34/Python_Student_Quiz_App_WithMySQL/assets/69586522/1e63ba6c-2c3b-4fdd-8c17-a9ad2dd027e5)
 
 
+------------------------------------------------------------------------------------------------------
+
+
 Let's solve the questions as a student:
+
+![image](https://github.com/soykuvvetberat34/Python_Student_Quiz_App_WithMySQL/assets/69586522/c3b11d97-3089-4336-a0ec-938bc18bca6f)
+
+******You get points in the system according to the number of questions you solve correctly.*****
+
+
+-------------------------------------------------------------------------------------------------------
+Let's see the student's score:
+
+
+![image](https://github.com/soykuvvetberat34/Python_Student_Quiz_App_WithMySQL/assets/69586522/3b0fe48d-c5c5-41d6-967d-00ef3e9e2cc5)
+
+
 
 
 
