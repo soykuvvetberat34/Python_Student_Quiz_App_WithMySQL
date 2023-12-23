@@ -80,6 +80,7 @@ Let's sign as a STUDENT
 
 Login as a STUDENT
 
+![image](https://github.com/soykuvvetberat34/Python_Student_Quiz_App_WithMySQL/assets/69586522/1e63ba6c-2c3b-4fdd-8c17-a9ad2dd027e5)
 
 
 
